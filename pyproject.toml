@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "usgs-gage-qc"
+version = "0.1.0"
+description = "Time-series peak extraction and quality analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+
+authors = [
+  { name = "Gonzalo Forero", email = "gonzaloforero57@gmail.com" }
+]
+
+keywords = [
+  "usgs",
+  "hydrology",
+  "geoscience",
+  "data-pipeline"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "requests",
+  "pyarrow",
+  "Hydro-Event-Detector",
+]
+
+
+[project.urls]
+Repository = "https://github.com/GonzaloAlbertoForeroBuitrago/usgs_gage_qc"
+
+
+
+[tool.setuptools.packages.find]
+where = ["."]

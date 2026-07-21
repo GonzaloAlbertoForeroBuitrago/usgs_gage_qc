@@ -1,0 +1,31 @@
+*.pyc
+*.egg-info
+ews_outputs/
+
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Downloaded and generated data
+data/
+historical_download/
+test_download/
+test_download_output/
+test_outputs/
+
+# Temporary/reference files
+HydroEventDetector_source.py
+compare_usgs_sources.py
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
